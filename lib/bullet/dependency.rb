@@ -7,7 +7,8 @@ module Bullet
     end
 
     def active_record?
-      @active_record ||= defined? ::ActiveRecord
+      @active_record = false
+      false
     end
 
     def rails?
